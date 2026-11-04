@@ -23,15 +23,17 @@
        Todas las clases que las usan (bg-fondo, text-texto, border-borde...)
        cambian solas, sin escribir dark: en cada elemento del HTML. */
     .dark {
-        --color-fondo: #1d140e;
-        --color-superficie: #2a1d14;
-        --color-texto: #f2e8d3;
-        --color-suave: #c9a679;
-        --color-acento: #e0a526;
-        --color-borde: #4a3424;
+        --color-1: #E3E1D5;
+        --color-2: #2D3B31;
+        --color-3: #E3E0D5;
+        --color-4: #404B41;
+        --color-5: #E3E0D5;
+        --color-6: #89947B;
+        --color-7: #A69D9B;
         color-scheme: dark;
     }
 }
+
 
 
 /* ---------- COMPONENTS: nuestras clases ---------- */
