@@ -49,34 +49,34 @@
 lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
 
     <header class="fixed top-0 left-0 w-full z-50">
-        <div class="mx-auto flex flex-wrap items-center justify-between px-5 py-5 md:py-8 md:px-8 md:gap-7 lg:bg-blur lg:backdrop-blur-sm lg:backdrop-saturate-100">
-            <a href="#inicio" class="rounded-full border-2 border-primero px-3 py-1 bg-blur backdrop-blur-sm backdrop-saturate-100 font-titulo2 text-md text-quinto font-bold md:text-2xl lg:bg-transparent lg:border-3">
+        <div class="mx-auto flex flex-wrap items-center justify-between p-5 md:py-8 md:px-8 md:gap-7 lg:p-5 lg:bg-blur lg:backdrop-blur-sm lg:backdrop-saturate-100">
+            <a href="#inicio" class="rounded-full border-2 border-primero px-3 py-1 bg-blur backdrop-blur-sm backdrop-saturate-100 font-titulo2 text-md text-quinto font-bold hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-2xl lg:bg-transparent lg:border-3">
                 Essenthia
             </a>
 
             <div class="flex items-center gap-2 lg:order-last">
                 <!-- Botón modo claro y oscuro -->
                 <button id="boton-tema" type="button" aria-pressed="false"
-                        class="rounded-full border-2 border-primero px-[0.65rem] py-1 text-md bg-blur backdrop-blur-sm backdrop-saturate-100 md:px-[0.7rem] md:text-2xl lg:bg-transparent lg:border-3 hover:border-acento hover:text-acento">
-                    <i class="fa-solid fa-moon text-primero"></i>
+                        class="rounded-full border-2 border-primero px-[0.65rem] py-1 text-md text-primero bg-blur backdrop-blur-sm backdrop-saturate-100 hover:bg-primero hover:text-cuarto transition-colors duration-300 md:px-[0.7rem] md:text-2xl lg:bg-transparent lg:border-3">
+                    <i class="fa-solid fa-moon"></i>
                     <!-- <i class="fa-solid fa-sun hidden text-primero"></i> -->
                 </button>
 
                 <!-- Botón abre y cierra del menú en móvil -->
                 <button id="boton-menu" type="button" aria-expanded="false" aria-controls="menu"
-                        class="rounded-full border-2 border-primero px-[0.6rem] py-1 text-md bg-blur backdrop-blur-sm backdrop-saturate-100 md:px-[0.7rem] md:text-2xl lg:hidden hover:border-acento hover:text-acento">
-                    <i class="fa-solid fa-bars text-primero"></i>
+                        class="rounded-full border-2 border-primero px-[0.6rem] py-1 text-md text-primero bg-blur backdrop-blur-sm backdrop-saturate-100 hover:bg-primero hover:text-cuarto transition-colors duration-300 md:px-[0.7rem] md:text-2xl lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
 
             <nav id="nav-principal" class="w-full mt-7 lg:ml-auto lg:w-auto lg:mt-0 max-h-0 opacity-0 overflow-hidden transition-[max-height,opacity] duration-300 ease-in-out lg:max-h-none lg:opacity-100 lg:overflow-visible">
                 <ul id="menu" class="flex flex-col justify-center text-center bg-cuarto rounded-2xl border-2 border-primero font-titulo text-xl text-quinto space-y-1 p-[16px] md:text-2xl lg:flex lg:flex-row lg:gap-8 lg:space-y-0 lg:pb-0 lg:bg-transparent lg:border-0 lg:font-titulo lg:font-bold lg:text-3xl lg:text-quinto lg:p-0">
-                    <li><a href="#inicio" class="enlace-menu block py-2">Inicio</a></li>
-                    <li><a href="#about" class="enlace-menu block py-2">Sobre Nosotros</a></li>
-                    <li><a href="#ofertas" class="enlace-menu block py-2">Ofertas</a></li>
-                    <li><a href="#galeria" class="enlace-menu block py-2">Galería</a></li>
-                    <li><a href="#contacto" class="enlace-menu block py-2">Contáctanos</a></li>
-                    <li><a href="#visita" class="enlace-menu block py-2">Visítanos</a></li>
+                    <li><a href="#inicio" class="enlace-menu block py-2 hover:text-primero transition-colors duration-300">Inicio</a></li>
+                    <li><a href="#about" class="enlace-menu block py-2 hover:text-primero transition-colors duration-300">Sobre Nosotros</a></li>
+                    <li><a href="#ofertas" class="enlace-menu block py-2 hover:text-primero transition-colors duration-300">Ofertas</a></li>
+                    <li><a href="#galeria" class="enlace-menu block py-2 hover:text-primero transition-colors duration-300">Galería</a></li>
+                    <li><a href="#contacto" class="enlace-menu block py-2 hover:text-primero transition-colors duration-300">Contáctanos</a></li>
+                    <li><a href="#visita" class="enlace-menu block py-2 hover:text-primero transition-colors duration-300">Visítanos</a></li>
                 </ul>
             </nav>
         </div>
@@ -127,10 +127,196 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
                 </div>
             </div>
         </section>
-        <section id="ofertas" class="">
-
+        
+        
+        <section id="ofertas" class="relative isolate overflow-x-clip">
+            <div class="relative z-10 flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
+                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
+                    Ofertas
+                </h2>
+            </div>
+            <div class="relative bg-cuarto py-5 px-3 md:py-16">
+                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-25 -right-30 -top-30 -rotate-60 md:w-120 md:-right-70 md:-top-35 lg:w-180 lg:-right-120 lg:-top-50">
+                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-74 -left-30 -bottom-60 opacity-25 rotate-40 md:w-120 md:-left-70 md:-bottom-85 lg:w-180 lg:-left-120 lg:-bottom-120">
+                <div class="relative z-10 overflow-x-auto overscroll-x-contain scroll-smooth  lg:overflow-x-visible">
+                    <div class="flex w-max flex-nowrap items-stretch gap-2 md:gap-10 md:px-6 lg:grid lg:w-full lg:grid-cols-5 lg:gap-6 lg:px-8">
+                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                            <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
+                                <img src="media/img/ofertas/ofertas-1.webp"
+                                    alt="Composición floral Sunny Day de Essenthia"
+                                    class="block w-full h-full object-cover">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-primero text-[0.8rem] font-bold">20,80 €</p>
+                                <h3 class="text-quinto font-titulo2 text-[1.25rem] font-bold">SUNNY DAY</h3>
+                                <p class="text-tercero text-[0.65rem] leading-relaxed">
+                                    Un ramo alegre y luminoso que combina flores blancas y amarillas con pequeños toques de color. Una composición fresca y natural que transmite optimismo y vitalidad. Ideal para regalar un poco de alegría.
+                                </p>
+                            </div>
+                            <button class="mt-auto w-full rounded-full border-2 border-primero px-3 py-2 font-texto text-xs font-bold text-quinto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-sm">
+                                ENCARGAR RAMO
+                            </button>
+                        </article>
+                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                            <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
+                                <img src="media/img/ofertas/ofertas-2.webp"
+                                    alt="Composición floral Rosé Cloud de Essenthia"
+                                    class="block w-full h-full object-cover">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-primero text-[0.8rem] font-bold">32,10 €</p>
+                                <h3 class="text-quinto font-titulo2 text-[1.25rem] font-bold">ROSÉ CLOUD</h3>
+                                <p class="text-tercero text-[0.65rem] leading-relaxed">
+                                    Una delicada combinación de flores en tonos rosa, melocotón y crema. Sus formas suaves y su aspecto silvestre crean una composición romántica y equilibrada. Perfecto para quienes buscan dulzura y elegancia.
+                                </p>
+                            </div>
+                            <button class="mt-auto w-full rounded-full border-2 border-primero px-3 py-2 font-texto text-xs font-bold text-quinto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-sm">
+                                ENCARGAR RAMO
+                            </button>
+                        </article>
+                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                            <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
+                                <img src="media/img/ofertas/ofertas-3.webp"
+                                    alt="Composición floral Peachy de Essenthia"
+                                    class="block w-full h-full object-cover">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-primero text-[0.8rem] font-bold">30,60 €</p>
+                                <h3 class="text-quinto font-titulo2 text-[1.25rem] font-bold">PEACHY</h3>
+                                <p class="text-tercero text-[0.65rem] leading-relaxed">
+                                    Un pequeño ramo lleno de encanto, protagonizado por flores en tonos melocotón, rosa y amarillo. Sus tonalidades resaltan la calidez y la sensibilidad. Una opción sencilla, delicada y especial.
+                                </p>
+                            </div>
+                            <button class="mt-auto w-full rounded-full border-2 border-primero px-3 py-2 font-texto text-xs font-bold text-quinto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-sm">
+                                ENCARGAR RAMO
+                            </button>
+                        </article>
+                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                            <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
+                                <img src="media/img/ofertas/ofertas-4.webp"
+                                    alt="Composición floral Golden Hour de Essenthia"
+                                    class="block w-full h-full object-cover">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-primero text-[0.8rem] font-bold">25,20 €</p>
+                                <h3 class="text-quinto font-titulo2 text-[1.25rem] font-bold">GOLDEN HOUR</h3>
+                                <p class="text-tercero text-[0.65rem] leading-relaxed">
+                                    Un ramo de inspiración silvestre donde el girasol se convierte en el gran protagonista, acompañado de pequeñas flores y elementos naturales. Ideal para transmitir energía y alegría.
+                                </p>
+                            </div>
+                            <button class="mt-auto w-full rounded-full border-2 border-primero px-3 py-2 font-texto text-xs font-bold text-quinto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-sm">
+                                ENCARGAR RAMO
+                            </button>
+                        </article>
+                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                            <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
+                                <img src="media/img/ofertas/ofertas-5.webp"
+                                    alt="Composición floral Rouge de Essenthia"
+                                    class="block w-full h-full object-cover">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-primero text-[0.8rem] font-bold">34,70 €</p>
+                                <h3 class="text-quinto font-titulo2 text-[1.25rem] font-bold">ROUGE</h3>
+                                <p class="text-tercero text-[0.65rem] leading-relaxed">
+                                    Una composición intensa y atrevida protagonizada por rosas rojas y pequeñas flores blancas. Su envoltorio oscuro aporta contraste y un carácter sofisticado. Un ramo pensado para dejar huella.
+                                </p>
+                            </div>
+                            <button class="mt-auto w-full rounded-full border-2 border-primero px-3 py-2 font-texto text-xs font-bold text-quinto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-sm">
+                                ENCARGAR RAMO
+                            </button>
+                        </article>
+                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                            <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
+                                <img src="media/img/ofertas/ofertas-6.webp"
+                                    alt="Composición floral Honey Glow de Essenthia"
+                                    class="block w-full h-full object-cover">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-primero text-[0.8rem] font-bold">35,30 €</p>
+                                <h3 class="text-quinto font-titulo2 text-[1.25rem] font-bold">HONEY GLOW</h3>
+                                <p class="text-tercero text-[0.65rem] leading-relaxed">
+                                    Una mezcla de rosas y flores en tonos anaranjados, melocotón y crema. Su envoltorio de inspiración vintage le aporta un aire desenfadado y especial. Una propuesta cálida, original y llena de personalidad.
+                                </p>
+                            </div>
+                            <button class="mt-auto w-full rounded-full border-2 border-primero px-3 py-2 font-texto text-xs font-bold text-quinto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-sm">
+                                ENCARGAR RAMO
+                            </button>
+                        </article>
+                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                            <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
+                                <img src="media/img/ofertas/ofertas-7.webp"
+                                    alt="Composición floral Tangerine de Essenthia"
+                                    class="block w-full h-full object-cover">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-primero text-[0.8rem] font-bold">37,50 €</p>
+                                <h3 class="text-quinto font-titulo2 text-[1.25rem] font-bold">TANGERINE</h3>
+                                <p class="text-tercero text-[0.65rem] leading-relaxed">
+                                    Un ramo vibrante que combina rosas anaranjadas y flores en tonos cálidos con pequeños matices azulados. El contraste entre sus colores crea una composición llamativa y contemporánea. Para quienes no tienen miedo a destacar.
+                                </p>
+                            </div>
+                            <button class="mt-auto w-full rounded-full border-2 border-primero px-3 py-2 font-texto text-xs font-bold text-quinto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-sm">
+                                ENCARGAR RAMO
+                            </button>
+                        </article>
+                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                            <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
+                                <img src="media/img/ofertas/ofertas-8.webp"
+                                    alt="Composición floral Burgundy de Essenthia"
+                                    class="block w-full h-full object-cover">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-primero text-[0.8rem] font-bold">30,80 €</p>
+                                <h3 class="text-quinto font-titulo2 text-[1.25rem] font-bold">BURGUNDY</h3>
+                                <p class="text-tercero text-[0.65rem] leading-relaxed">
+                                    Una composición de carácter intenso que reúne flores en tonos burdeos, vino y crema. Sus contrastes y texturas crean un aspecto elegante y ligeramente misterioso. Una opción diferente para ocasiones especiales.
+                                </p>
+                            </div>
+                            <button class="mt-auto w-full rounded-full border-2 border-primero px-3 py-2 font-texto text-xs font-bold text-quinto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-sm">
+                                ENCARGAR RAMO
+                            </button>
+                        </article>
+                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                            <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
+                                <img src="media/img/ofertas/ofertas-9.webp"
+                                    alt="Composición floral Tulip Kiss de Essenthia"
+                                    class="block w-full h-full object-cover">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-primero text-[0.8rem] font-bold">28,20 €</p>
+                                <h3 class="text-quinto font-titulo2 text-[1.25rem] font-bold">TULIP KISS</h3>
+                                <p class="text-tercero text-[0.65rem] leading-relaxed">
+                                    Un ramo minimalista protagonizado por tulipanes en un intenso tono rosa rojizo. Su sencillez permite que la belleza y la forma natural de cada flor sean las protagonistas. Fresco, delicado y atemporal.
+                                </p>
+                            </div>
+                            <button class="mt-auto w-full rounded-full border-2 border-primero px-3 py-2 font-texto text-xs font-bold text-quinto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-sm">
+                                ENCARGAR RAMO
+                            </button>
+                        </article>
+                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                            <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
+                                <img src="media/img/ofertas/ofertas-10.webp"
+                                    alt="Composición floral Blush Garden de Essenthia"
+                                    class="block w-full h-full object-cover">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-primero text-[0.8rem] font-bold">35,40 €</p>
+                                <h3 class="text-quinto font-titulo2 text-[1.25rem] font-bold">BLUSH GARDEN</h3>
+                                <p class="text-tercero text-[0.65rem] leading-relaxed">
+                                    Una romántica combinación de rosas en tonos rosa empolvado, blanco y crema, acompañadas de pequeños detalles verdes. Su aspecto natural y voluminoso aporta frescura y elegancia. Un clásico reinterpretado con un aire contemporáneo.
+                                </p>
+                            </div>
+                            <button class="mt-auto w-full rounded-full border-2 border-primero px-3 py-2 font-texto text-xs font-bold text-quinto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-sm">
+                                ENCARGAR RAMO
+                            </button>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
         </section>
+
+
         <section id="galeria" class="">
 
 
@@ -144,21 +330,20 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
 
         </section>
     </main>
-        <!-- Indicadores de secciones -->
     <!-- Indicadores de secciones -->
     <nav id="indicadores-secciones" aria-label="Navegación por secciones"
         class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center justify-center gap-3">
-        <a href="#inicio" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Inicio" aria-current="location">
+        <a href="#inicio" class="w-3 h-3 rounded-full border-[2px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Inicio" aria-current="location">
         </a>
-        <a href="#about" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Sobre Nosotros">
+        <a href="#about" class="w-3 h-3 rounded-full border-[2px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Sobre Nosotros">
         </a>
-        <a href="#ofertas" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Ofertas">
+        <a href="#ofertas" class="w-3 h-3 rounded-full border-[2px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Ofertas">
         </a>
-        <a href="#galeria" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Galería">
+        <a href="#galeria" class="w-3 h-3 rounded-full border-[2px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Galería">
         </a>
-        <a href="#contacto" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Contáctanos">
+        <a href="#contacto" class="w-3 h-3 rounded-full border-[2px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Contáctanos">
         </a>
-        <a href="#visita" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Visítanos">
+        <a href="#visita" class="w-3 h-3 rounded-full border-[2px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Visítanos">
         </a>
     </nav>
     <footer>
