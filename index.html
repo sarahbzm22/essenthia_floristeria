@@ -70,7 +70,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
             </div>
 
             <nav id="nav-principal" class="w-full mt-7 lg:ml-auto lg:w-auto lg:mt-0 max-h-0 opacity-0 overflow-hidden transition-[max-height,opacity] duration-300 ease-in-out lg:max-h-none lg:opacity-100 lg:overflow-visible">
-                <ul id="menu" class="flex flex-col justify-center text-center bg-cuarto rounded-2xl border-2 border-primero font-titulo text-xl text-quinto space-y-1 p-[16px] md:text-2xl lg:flex lg:flex-row lg:gap-8 lg:space-y-0 lg:pb-0 lg:bg-transparent lg:border-0 lg:font-titulo lg:font-bold lg:text-3xl lg:text-quinto lg:p-0">
+                <ul id="menu" class="flex flex-col justify-center text-center bg-cuarto rounded-2xl border-2 border-primero font-titulo text-2xl text-quinto space-y-1 p-[16px] md:text-3xl lg:flex lg:flex-row lg:gap-8 lg:space-y-0 lg:pb-0 lg:bg-transparent lg:border-0 lg:font-titulo lg:font-bold lg:text-quinto lg:p-0">
                     <li><a href="#inicio" class="enlace-menu block py-2 hover:text-primero transition-colors duration-300">Inicio</a></li>
                     <li><a href="#about" class="enlace-menu block py-2 hover:text-primero transition-colors duration-300">Sobre Nosotros</a></li>
                     <li><a href="#ofertas" class="enlace-menu block py-2 hover:text-primero transition-colors duration-300">Ofertas</a></li>
@@ -96,16 +96,14 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
         </section>
         <!-- SOBRE NOSOTROS -->
         <section id="about" class="relative isolate overflow-x-clip">
-            <div class="relative z-10 flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
+            <div class="relative flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
                 <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
                     Sobre Nosotros
                 </h2>
             </div>
-            <div class="relative bg-sexto py-10 md:py-16">
-                <img src="media/img/decoraciones/blob.png"
-                    alt="Decoración 1" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-50 -right-30 -top-12 md:w-140 md:-right-60 lg:w-200 lg:-right-80 lg:-top-24">
-                <img src="media/img/decoraciones/blob.png"
-                    alt="Decoración 2" aria-hidden="true" class="absolute pointer-events-none w-74 md:w-140 -left-30 -bottom-15 opacity-50 md:-left-60 lg:w-200 lg:-left-80 lg:-bottom-30">
+            <div class="relative z-10 bg-sexto py-10 md:py-16">
+                <img src="media/img/decoraciones/blob.png" alt="Decoración 1" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-50 -right-30 -top-12 md:w-140 md:-right-60 lg:w-200 lg:-right-80 lg:-top-24">
+                <img src="media/img/decoraciones/blob.png" alt="Decoración 2" aria-hidden="true" class="absolute pointer-events-none w-74 md:w-140 -left-30 -bottom-15 opacity-50 md:-left-60 lg:w-200 lg:-left-80 lg:-bottom-30">
                 <div class="relative z-0 flex items-center gap-4 mb-12 md:gap-10 md:-mb-8 lg:gap-20 lg:-mb-25">
                     <figure class="relative shrink-0 w-55 h-55 -ml-15 rounded-full border-2 border-primero overflow-hidden md:w-120 md:h-120 md:-ml-32 lg:w-180 lg:h-180 lg:-ml-40 lg:border-3">
                         <img src="media/img/about/about-1.webp" alt="Composición floral de Essenthia" class="w-full h-full object-cover">
@@ -137,7 +135,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
             </div>
             <div class="relative bg-cuarto py-5 px-3 md:py-16">
                 <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-25 -right-30 -top-30 -rotate-60 md:w-120 md:-right-70 md:-top-35 lg:w-180 lg:-right-120 lg:-top-50">
-                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-74 -left-30 -bottom-60 opacity-25 rotate-40 md:w-120 md:-left-70 md:-bottom-85 lg:w-180 lg:-left-120 lg:-bottom-120">
+                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-74 -left-40 -bottom-55 opacity-25 rotate-40 md:w-120 md:-left-70 md:-bottom-85 lg:w-180 lg:-left-120 lg:-bottom-120">
                 <div class="relative z-10 overflow-x-auto overscroll-x-contain scroll-smooth  lg:overflow-x-visible">
                     <div class="flex w-max flex-nowrap items-stretch gap-2 md:gap-10 md:px-6 lg:grid lg:w-full lg:grid-cols-5 lg:gap-6 lg:px-8">
                         <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
@@ -311,90 +309,120 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
                             </button>
                         </article>
                     </div>
-                </div>
-           </section>
+                </div>    
+            </div>
+        </section>
                    
     <!-- GALERIA -->
-    <section id="galeria">
-        <h1 class="text-center font-titulo text-[3rem] text-primero py-8 lg:text-[4rem]">Galería</h1>
-        <div class="bg-septimo px-6 py-8">
-            <div class="columns-2 gap-4 lg:columns-4">
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/1.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/2.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/3.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/4.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/5.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/6.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/7.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/8.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/9.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/10.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/11.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/12.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/13.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/14.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/15.webp">
-                </figure>
-                <figure class="mb-5">
-                    <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/16.jpg">
-                </figure>
+        <section id="galeria" class="relative isolate overflow-x-clip">
+            <div class="relative z-10 flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
+                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
+                    Galería
+                </h2>
             </div>
-        </div>
-    </section>
-          
-    <!-- CONTACTO -->       
-    <section id="contacto">
-         <h1 class="text-center font-titulo text-[3rem] text-primero py-8 lg:text-[4rem]">Contáctanos</h1>
-        <div class="bg-sexto px-6 py-8">
-            <p class="text-center font-texto text-[0.95rem] text-cuarto">Para encargarnos un ramo personalizado, ¡contáctanos!</p>
-            <form id="formulario" class="flex flex-col items-center gap-4 py-8">
-                <input class="w-full rounded-xl border-2 border-primero bg-cuarto font-texto text-tercero placeholder:text-[0.9rem] p-0.5 lg:w-1/2 lg:max-w-[40rem]" type="text" id="nombre" placeholder="Escribe tu e-mail..." required>
-                <input class="w-full rounded-xl border-2 border-primero bg-cuarto font-texto text-tercero placeholder:text-[0.9rem] p-0.5 lg:w-1/2 lg:max-w-[40rem]" type="text" id="email" placeholder="Escribe tu teléfono..." required>
-                <input class="w-full rounded-xl border-2 border-primero bg-cuarto font-texto text-tercero placeholder:text-[0.9rem] p-0.5 h-60 lg:w-1/2 lg:max-w-[40rem]" type="text" id="comment" placeholder="Solicitud de encargo..." required>
-                <input class="w-1/2 max-w-xs rounded-xl border-2 border-cuarto bg-primero font-texto text-cuarto placeholder:text-[0.9rem] p-0.5 g:w-1/2 lg:max-w-[10rem]" id="boton" type="submit">
-            </form>
-        </div>
-    </section>
+            <div class="bg-septimo p-6 md:p-8 lg:p-10">
+                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-25 -right-30 top-20 -rotate-60 md:w-120 md:-right-70 md:top-20 lg:w-180 lg:-right-120 lg:top-25">
+                <img src="media/img/decoraciones/blob.png" alt="Decoración 2" aria-hidden="true" class="absolute pointer-events-none w-140  -left-40 -bottom-20 opacity-50 md:w-140 md:-left-60 lg:w-200 lg:-left-80 lg:-bottom-30">
+                <div class="relative z-10 columns-2 gap-4 md:columns-3 lg:columns-4">
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/1.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/2.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/3.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/4.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/5.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/6.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/7.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/8.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/9.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/10.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/11.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/12.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/13.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/14.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/15.webp">
+                    </figure>
+                    <figure class="mb-5">
+                        <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/16.jpg">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CONTACTO -->       
+            
+        <section id="contacto" class="relative isolate overflow-x-clip">
+            <div class="flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
+                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
+                    Contáctanos
+                </h2>
+            </div>
+            <div class="relative z-10 bg-sexto px-6 py-8">
+                <img src="media/img/decoraciones/blob.png" alt="Decoración 1" aria-hidden="true" class="absolute pointer-events-none w-90 opacity-50 -right-30 -top-12 md:w-140 md:-right-60 lg:w-200 lg:-right-80 lg:-top-24">
+                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-74 -left-40 -bottom-55 opacity-50 rotate-40 md:w-120 md:-left-70 md:-bottom-85 lg:w-180 lg:-left-120 lg:-bottom-120">
+                <div class="relative z-10">
+                    <p class="text-center font-texto text-[0.95rem] text-cuarto">Para encargarnos un ramo personalizado, ¡contáctanos!</p>
+                    <form id="formulario" class="flex flex-col items-center gap-4 pt-8">
+                        <input class="w-full rounded-full border-2 border-primero bg-cuarto font-texto text-tercero placeholder:text-[0.9rem] p-2 lg:w-1/2 lg:max-w-[40rem]" type="text" id="nombre" placeholder="Escribe tu e-mail..." required>
+                        <input class="w-full rounded-full border-2 border-primero bg-cuarto font-texto text-tercero placeholder:text-[0.9rem] p-2 lg:w-1/2 lg:max-w-[40rem]" type="text" id="email" placeholder="Escribe tu teléfono..." required>
+                        <input class="w-full rounded-xl border-2 border-primero bg-cuarto font-texto text-tercero placeholder:text-[0.9rem] p-2 h-60 lg:w-1/2 lg:max-w-[40rem]" type="text" id="comment" placeholder="Solicitud de encargo..." required>
+                        <input class="w-1/2 max-w-xs rounded-full border-2 border-cuarto bg-primero font-texto text-cuarto placeholder:text-[0.9rem] p-2 g:w-1/2 lg:max-w-[10rem]" id="boton" type="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
 
-    <!-- UBICACIÓN Y HORARIOS -->     
-    <section id="visita">
-        <h1 class="text-center font-titulo text-[3rem] text-primero py-8 lg:text-[4rem]">Visítanos</h1>
-        <div class="bg-cuarto px-6 py-8">
-            <p class="text-center font-texto text-[0.95rem] text-tercero">Puedes encontrarnos en</p>
-            <h2 class="text-center font-titulo2 text-[1.5rem] text-primero pb-6">Av. de Bruselas, 64, Salamanca, 28028 Madrid</h2>
-            <div class="w-full aspect-[4/3] rounded-2xl border-2 max-w-md border-primero overflow-hidden lg:display-flex lg:max-w-[50%] lg:mx-auto aspect-[4/3] lg:max-w-[40%] lg:mx-auto"">
-                <iframe class="w-full h-full block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.1468567628867!2d-3.6623728339261916!3d40.44013368508735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228ccac19fe93%3A0x58b938bd23c4c6cd!2sAv.%20de%20Bruselas%2C%2064%2C%20Salamanca%2C%2028028%20Madrid!5e0!3m2!1ses!2ses!4v1793841375778!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <!-- UBICACIÓN Y HORARIOS -->     
+        <section id="visita" class="relative isolate overflow-x-clip">
+            <div class="relative z-10 flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
+                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
+                    Visítanos
+                </h2>
             </div>
-        </section>               
+            <div class="relative z-10 bg-cuarto px-6 py-8">
+                <img src="media/img/decoraciones/blob.png" alt="Decoración 1" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-25 -right-30 -top-12 md:w-140 md:-right-60 md:-top-20 lg:w-200 lg:-right-80 lg:-top-24">
+                <img src="media/img/decoraciones/blob.png" alt="Decoración 2" aria-hidden="true" class="absolute pointer-events-none w-74 -left-30 -bottom-15 opacity-25 md:w-140 md:-left-60 md:-bottom-35 lg:w-200 lg:-left-80 lg:-bottom-30">
+                <div class="relative z-10">
+                    <p class="text-center font-texto text-[0.95rem] text-tercero">Puedes encontrarnos en</p>
+                    <h2 class="text-center font-titulo2 text-[1.5rem] text-primero pb-6">Av. de Bruselas, 64, Salamanca, 28028 Madrid</h2>
+                    <div class="w-full max-w-md mx-auto aspect-[4/3] rounded-2xl border-2 border-primero overflow-hidden lg:max-w-[40%]">
+                        <iframe class="w-full h-full block"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.1468567628867!2d-3.6623728339261916!3d40.44013368508735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228ccac19fe93%3A0x58b938bd23c4c6cd!2sAv.%20de%20Bruselas%2C%2064%2C%20Salamanca%2C%2028028%20Madrid!5e0!3m2!1s!2ses!4v1793841375778!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                    </div>
+                    <p class="text-center font-texto text-[0.95rem] text-tercero pt-6">Nuestro horario es:</p>
+                    <h2 class="text-center font-titulo2 text-[1.5rem] text-primero">De Lunes a Sábado<br>
+                    9:00 - 14:00 & 15:30 - 20:00</h2>
+                </div>
+            </div>
+        </section>             
     </main>
     <!-- Indicadores de secciones -->
     <nav id="indicadores-secciones" aria-label="Navegación por secciones"
@@ -412,8 +440,23 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
         <a href="#visita" class="w-3 h-3 rounded-full border-[2px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Visítanos">
         </a>
     </nav>
-    <footer>
-
+    <footer class="relative isolate h-150 bg-segundo px-5 py-5 antialiased before:content-[''] before:absolute before:inset-0 before:-z-10 before:bg-[url('media/img/flores.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-[30%] before:pointer-events-none">
+        <div class="flex flex-col justify-center items-center gap-15 my-30 lg:gap-10">
+                <h3 class="text-tercero font-texto text-md md:font-bold lg:text-lg lg:font-bold">
+                    FLORISTERÍA <span class="font-titulo text-primero text-xl">·</span> AV. DE BRUSELAS
+                </h3>
+                <h1 class="text-quinto font-titulo2 text-[5.6rem] leading-[2.3rem] md:text-[7.5rem] md:leading-[3.5rem] lg:text-[9.5rem] lg:leading-[4.5rem]">
+                    <span class="font-bold"> Essenthia </span><br>
+                    <span class="text-primero font-titulo text-[2.7rem] font-300 md:text-[3.7rem] lg:text-[4.7rem]">Flores con alma</span>
+                </h1>
+                <p class="text-center font-texto text-[0.95rem] text-tercero">
+                    flores_essenthia@gmail.com
+                    <br>
+                    639 71 61 22
+                    <br>
+                    @flores_essenthia
+                </p>
+            </div>
     </footer> 
     <!-- =====JAVASCRIPT ===== -->
      <script src="js/jquery-3.6.1.min.js"></script>
