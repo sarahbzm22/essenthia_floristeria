@@ -13,10 +13,31 @@
         scroll-padding-top: 5rem; /* para que la cabecera fija no tape los títulos */
     }
 
-    ::selection {
+    /* ===== INDICADORES DE SECCIONES ===== */
+
+    .indicador-seccion {
+        width: 10px;
+        height: 10px;
+
+        border: 1.5px solid #753F40;
+        border-radius: 50%;
+
+        background-color: transparent;
+
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Círculo de la sección activa */
+
+    .indicador-seccion.activo {
+        background-color: #753F40;
+        transform: scale(1.1);
+    }
+
+    /* ::selection {
         background: var(--color-acento);
         color: var(--color-fondo);
-    }
+    } */
 
     /* MODO OSCURO CAMBIANDO EL TEMA ENTERO
        Cuando el <html> tiene la clase .dark, redefinimos las variables del @theme.
