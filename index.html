@@ -45,37 +45,58 @@
         }
     </style>
 </head>
-<body class="bg-segundo antialiased">
-    <header class="">
-        <div class="mx-auto flex flex-wrap items-center justify-between gap-4 px-5 py-5 md:py-8 md:px-8">
-            <a href="#inicio" class="rounded-full border border-borde px-2 py-2 font-titulo2 text-sm font-bold md:text-2xl">
+<body class="relative isolate bg-segundo antialiased    before:content-[''] before:fixed before:inset-0 before:-z-10 before:bg-[url('media/img/texturas/encaje-blanco-claro.png')] before:bg-no-repeat before:bg-auto
+lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
+
+    <header class="fixed top-0 left-0 w-full z-50">
+        <div class="mx-auto flex flex-wrap items-center justify-between px-5 py-5 md:py-8 md:px-8 md:gap-7">
+            <a href="#inicio" class="rounded-full border-2 border-primero px-3 py-1 font-titulo2 text-md text-quinto font-bold md:text-2xl">
                 Essenthia
             </a>
 
             <div class="flex items-center gap-2 md:order-last">
-                <!-- Persona A: este botón cambia entre modo claro y oscuro -->
+                <!-- Botón modo claro y oscuro -->
                 <button id="boton-tema" type="button" aria-pressed="false"
-                        class="rounded-full border border-borde px-2 py-2 text-sm md:px-4 font-semibold hover:border-acento hover:text-acento">
-                    Modo oscuro
+                        class="rounded-full border-2 border-primero px-[0.65rem] py-1 text-md md:px-[0.7rem] md:text-2xl hover:border-acento hover:text-acento">
+                    <i class="fa-solid fa-moon text-primero"></i>
+                    <!-- <i class="fa-solid fa-sun hidden text-primero"></i> -->
                 </button>
 
-                <!-- Persona A: este botón abre y cierra el menú en móvil -->
+                <!-- Botón abre y cierra del menú en móvil -->
                 <button id="boton-menu" type="button" aria-expanded="false" aria-controls="menu"
-                        class="rounded-full bg-acento px-3 py-2 text-sm font-semibold text-fondo md:hidden">
+                        class="rounded-full border-2 border-primero px-[0.6rem] py-1 text-md md:px-[0.7rem] md:text-2xl hover:border-acento hover:text-acento md:hidden">
                     <i class="fa-solid fa-bars text-primero"></i>
                 </button>
             </div>
 
-            <nav class="w-full md:ml-auto md:w-auto" aria-label="Principal">
-                <ul id="menu" class="hidden space-y-1 pb-2 md:flex md:gap-8 md:space-y-0 md:pb-0">
+            <nav class="hidden w-full mt-7 md:ml-auto md:w-auto md:mt-0" aria-label="Principal">
+                <ul id="menu" class="hidden justify-center text-center bg-cuarto rounded-2xl border-2 border-primero font-titulo text-xl text-quinto space-y-1 p-[16px]  md:flex md:gap-8 md:space-y-0 md:pb-0 md:bg-transparent md:border-0 md:font-titulo md:font-bold md:text-3xl md:text-quinto md:p-0">
                     <li><a href="#inicio" class="enlace-menu block py-2">Inicio</a></li>
-                    <li><a href="#productos" class="enlace-menu block py-2">Productos</a></li>
-                    <li><a href="#preguntas" class="enlace-menu block py-2">Preguntas</a></li>
+                    <li><a href="#productos" class="enlace-menu block py-2">Sobre Nosotros</a></li>
+                    <li><a href="#preguntas" class="enlace-menu block py-2">Ofertas</a></li>
+                    <li><a href="#visitanos" class="enlace-menu block py-2">Galería</a></li>
+                    <li><a href="#visitanos" class="enlace-menu block py-2">Contáctanos</a></li>
                     <li><a href="#visitanos" class="enlace-menu block py-2">Visítanos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <section class="relative isolate min-h-screen bg-segundo px-5 py-5 antialiased before:content-[''] before:absolute before:inset-0 before:-z-10 before:bg-[url('media/img/flores.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-[30%] before:pointer-events-none">
+        <div class="min-h-[calc(100dvh-40px)] flex flex-col justify-center items-center gap-15">
+            <h1 class="text-quinto font-titulo2 text-[5.6rem] leading-[2.3rem] ">
+                <span class="font-bold"> Essenthia </span><br>
+                <span class="text-primero font-titulo text-[2.7rem] font-300">Flores con alma</span>
+            </h1>
+            <h3 class="text-tercero font-texto font-md">
+                FLORISTERÍA <span class="font-titulo text-lg">·</span> AV. DE BRUSELAS
+            </h3>
+        </div>
+    </section>
+    <section class="">
+
+
+    </section>
+    
  
     <!-- =====JAVASCRIPT ===== -->
      <script src="js/jquery-3.6.1.min.js"></script>
