@@ -44,9 +44,22 @@
             --font-texto: "DM Sans", system-ui, sans-serif;
         }
     </style>
+    <style>
+        html.dark {
+            --color-primero: #E3E1D5;
+            --color-segundo: #2D3B31;
+            --color-tercero: #E3E1D5;
+            --color-cuarto: #404B41;
+            --color-quinto: #E3E1D5;
+            --color-sexto: #89947B;
+            --color-septimo: #A69D9B;
+
+            color-scheme: dark;
+        }
+    </style>
 </head>
 <body class="relative isolate bg-segundo antialiased    before:content-[''] before:fixed before:inset-0 before:-z-10 before:bg-[url('media/img/texturas/encaje-blanco-claro.png')] before:bg-no-repeat before:bg-auto
-lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
+lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:opacity-[10%]">
 
     <header class="fixed top-0 left-0 w-full z-50">
         <div class="mx-auto flex flex-wrap items-center justify-between p-5 md:py-8 md:px-8 md:gap-7 lg:p-5 lg:bg-blur lg:backdrop-blur-sm lg:backdrop-saturate-100">
@@ -56,10 +69,14 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
 
             <div class="flex items-center gap-2 lg:order-last">
                 <!-- Botón modo claro y oscuro -->
-                <button id="boton-tema" type="button" aria-pressed="false"
-                        class="rounded-full border-2 border-primero px-[0.65rem] py-1 text-md text-primero bg-blur backdrop-blur-sm backdrop-saturate-100 hover:bg-primero hover:text-cuarto transition-colors duration-300 md:px-[0.7rem] md:text-2xl lg:bg-transparent lg:border-3">
-                    <i class="fa-solid fa-moon"></i>
-                    <!-- <i class="fa-solid fa-sun hidden text-primero"></i> -->
+                <button id="boton-tema" type="button"
+                    aria-pressed="false"
+                    aria-label="Activar modo oscuro"
+                    class="rounded-full border-2 border-primero px-[0.65rem] py-1 text-md text-primero bg-transparent backdrop-blur-sm hover:bg-primero hover:text-cuarto transition-colors duration-300 md:px-[0.7rem] md:text-2xl lg:bg-transparent lg:border-3">
+
+                    <i id="icono-luna" class="fa-solid fa-moon"></i>
+                    <i id="icono-sol" class="fa-solid fa-sun" style="display: none;"></i>
+
                 </button>
 
                 <!-- Botón abre y cierra del menú en móvil -->
@@ -84,7 +101,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
     <main>
         <!-- INICIO -->
         <section id="inicio" class="relative isolate min-h-screen bg-segundo px-5 py-5 antialiased before:content-[''] before:absolute before:inset-0 before:-z-10 before:bg-[url('media/img/flores.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-[30%] before:pointer-events-none">
-            <div class="min-h-[calc(100dvh-40px)] flex flex-col justify-center items-center gap-15 lg:gap-10">
+            <div class="min-h-[calc(100dvh-40px)] flex flex-col justify-center items-center gap-15 lg:gap-10" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                 <h1 class="text-quinto font-titulo2 text-[5.6rem] leading-[2.3rem] md:text-[7.5rem] md:leading-[3.5rem] lg:text-[9.5rem] lg:leading-[4.5rem]">
                     <span class="font-bold"> Essenthia </span><br>
                     <span class="text-primero font-titulo text-[2.7rem] font-300 md:text-[3.7rem] lg:text-[4.7rem]">Flores con alma</span>
@@ -97,15 +114,15 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
         <!-- SOBRE NOSOTROS -->
         <section id="about" class="relative isolate overflow-x-clip">
             <div class="relative flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
-                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
+                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]" data-aos="fade-up">
                     Sobre Nosotros
                 </h2>
             </div>
             <div class="relative z-10 bg-sexto py-10 md:py-16">
-                <img src="media/img/decoraciones/blob.png" alt="Decoración 1" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-50 -right-30 -top-12 md:w-140 md:-right-60 lg:w-200 lg:-right-80 lg:-top-24">
-                <img src="media/img/decoraciones/blob.png" alt="Decoración 2" aria-hidden="true" class="absolute pointer-events-none w-74 md:w-140 -left-30 -bottom-15 opacity-50 md:-left-60 lg:w-200 lg:-left-80 lg:-bottom-30">
+                <img src="media/img/decoraciones/blob.png" alt="Decoración 1" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-50 -right-30 -top-12 md:w-140 md:-right-60 lg:w-200 lg:-right-80 lg:-top-24 dark:opacity-30">
+                <img src="media/img/decoraciones/blob.png" alt="Decoración 2" aria-hidden="true" class="absolute pointer-events-none w-74 md:w-140 -left-30 -bottom-15 opacity-50 md:-left-60 lg:w-200 lg:-left-80 lg:-bottom-30 dark:opacity-30">
                 <div class="relative z-0 flex items-center gap-4 mb-12 md:gap-10 md:-mb-8 lg:gap-20 lg:-mb-25">
-                    <figure class="relative shrink-0 w-55 h-55 -ml-15 rounded-full border-2 border-primero overflow-hidden md:w-120 md:h-120 md:-ml-32 lg:w-180 lg:h-180 lg:-ml-40 lg:border-3">
+                    <figure class="relative shrink-0 w-55 h-55 -ml-15 rounded-full border-2 border-primero overflow-hidden md:w-120 md:h-120 md:-ml-32 lg:w-180 lg:h-180 lg:-ml-40 lg:border-3" data-aos="zoom-in">
                         <img src="media/img/about/about-1.webp" alt="Composición floral de Essenthia" class="w-full h-full object-cover">
                     </figure>
                     <p class="flex-1 min-w-0 pr-6 font-texto text-cuarto text-[0.65rem] font-light md:text-base md:pr-8 lg:text-2xl lg:pr-10" >
@@ -116,7 +133,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
                     <p class="flex-1 min-w-0 pl-6 font-texto text-cuarto text-[0.65rem] font-light md:text-base md:pl-8 lg:text-2xl lg:pl-10">
                         Para nosotros, las flores no necesitan una ocasión especial para formar parte de nuestras vidas, pero queremos acompañarte en esos momentos, tanto en las grandes celebraciones como en los pequeños gestos cotidianos, ofreciendo composiciones que cuenten historias. En Essenthia apostamos por una floristería que va más allá de lo convencional, donde la sensibilidad y la creatividad se encuentran para dar vida a algo único. Cada ramo, cada combinación y cada pequeño detalle forman parte de una manera personal de entender las flores.
                     </p>
-                    <figure class="relative shrink-0 w-48 h-48 -mr-15 rounded-full border-2 border-primero overflow-hidden md:w-110 md:h-110 md:-mr-32 lg:w-160 lg:h-160 lg:-mr-40 lg:border-3">
+                    <figure class="relative shrink-0 w-48 h-48 -mr-15 rounded-full border-2 border-primero overflow-hidden md:w-110 md:h-110 md:-mr-32 lg:w-160 lg:h-160 lg:-mr-40 lg:border-3" data-aos="zoom-in">
                         <img
                             src="media/img/about/about-2.webp"
                             alt="Composición floral de Essenthia"
@@ -129,13 +146,13 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
         <!-- OFERTAS -->
         <section id="ofertas" class="relative isolate overflow-x-clip">
             <div class="relative z-10 flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
-                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
+                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]" data-aos="fade-up">
                     Ofertas
                 </h2>
             </div>
             <div class="relative bg-cuarto py-5 px-3 md:py-16">
-                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-25 -right-30 -top-30 -rotate-60 md:w-120 md:-right-70 md:-top-35 lg:w-180 lg:-right-120 lg:-top-50">
-                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-74 -left-40 -bottom-55 opacity-25 rotate-40 md:w-120 md:-left-70 md:-bottom-85 lg:w-180 lg:-left-120 lg:-bottom-120">
+                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-25 -right-30 -top-30 -rotate-60 md:w-120 md:-right-70 md:-top-35 lg:w-180 lg:-right-120 lg:-top-50 dark:opacity-50">
+                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-74 -left-40 -bottom-55 opacity-25 rotate-40 md:w-120 md:-left-70 md:-bottom-85 lg:w-180 lg:-left-120 lg:-bottom-120 dark:opacity-50">
                 <div class="relative z-10 overflow-x-auto overscroll-x-contain scroll-smooth  lg:overflow-x-visible">
                     <div class="flex w-max flex-nowrap items-stretch gap-2 md:gap-10 md:px-6 lg:grid lg:w-full lg:grid-cols-5 lg:gap-6 lg:px-8">
                         <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
@@ -316,60 +333,60 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
     <!-- GALERIA -->
         <section id="galeria" class="relative isolate overflow-x-clip">
             <div class="relative z-10 flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
-                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
+                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]" data-aos="fade-up">
                     Galería
                 </h2>
             </div>
             <div class="bg-septimo p-6 md:p-8 lg:p-10">
-                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-25 -right-30 top-20 -rotate-60 md:w-120 md:-right-70 md:top-20 lg:w-180 lg:-right-120 lg:top-25">
-                <img src="media/img/decoraciones/blob.png" alt="Decoración 2" aria-hidden="true" class="absolute pointer-events-none w-140  -left-40 -bottom-20 opacity-50 md:w-140 md:-left-60 lg:w-200 lg:-left-80 lg:-bottom-30">
+                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-25 -right-30 top-20 -rotate-60 md:w-120 md:-right-70 md:top-20 lg:w-180 lg:-right-120 lg:top-25 dark:opacity-50">
+                <img src="media/img/decoraciones/blob.png" alt="Decoración 2" aria-hidden="true"  class="absolute pointer-events-none w-140  -left-40 -bottom-20 opacity-50 md:w-140 md:-left-60 lg:w-200 lg:-left-80 lg:-bottom-30">
                 <div class="relative z-10 columns-2 gap-4 md:columns-3 lg:columns-4">
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/1.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/2.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/3.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/4.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/5.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/6.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/7.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/8.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/9.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/10.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/11.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/12.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/13.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/14.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/15.webp">
                     </figure>
-                    <figure class="mb-5">
+                    <figure class="mb-5" data-aos="fade-up">
                         <img class="rounded-xl border-2 border-primero" src="media/img/img galeria/16.jpg">
                     </figure>
                 </div>
@@ -380,13 +397,13 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
             
         <section id="contacto" class="relative isolate overflow-x-clip">
             <div class="flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
-                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
+                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]" data-aos="fade-up">
                     Contáctanos
                 </h2>
             </div>
             <div class="relative z-10 bg-sexto px-6 py-8">
                 <img src="media/img/decoraciones/blob.png" alt="Decoración 1" aria-hidden="true" class="absolute pointer-events-none w-90 opacity-50 -right-30 -top-12 md:w-140 md:-right-60 lg:w-200 lg:-right-80 lg:-top-24">
-                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-74 -left-40 -bottom-55 opacity-50 rotate-40 md:w-120 md:-left-70 md:-bottom-85 lg:w-180 lg:-left-120 lg:-bottom-120">
+                <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-74 -left-40 -bottom-55 opacity-50 rotate-40 md:w-120 md:-left-70 md:-bottom-85 lg:w-180 lg:-left-120 lg:-bottom-120 dark:opacity-50">
                 <div class="relative z-10">
                     <p class="text-center font-texto text-[0.95rem] text-cuarto">Para encargarnos un ramo personalizado, ¡contáctanos!</p>
                     <form id="formulario" class="flex flex-col items-center gap-4 pt-8">
@@ -402,7 +419,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
         <!-- UBICACIÓN Y HORARIOS -->     
         <section id="visita" class="relative isolate overflow-x-clip">
             <div class="relative z-10 flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
-                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
+                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]" data-aos="fade-up">
                     Visítanos
                 </h2>
             </div>
@@ -442,14 +459,14 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
     </nav>
     <footer class="relative isolate h-150 bg-segundo px-5 py-5 antialiased before:content-[''] before:absolute before:inset-0 before:-z-10 before:bg-[url('media/img/flores.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-[30%] before:pointer-events-none">
         <div class="flex flex-col justify-center items-center gap-15 my-30 lg:gap-10">
-                <h3 class="text-tercero font-texto text-md md:font-bold lg:text-lg lg:font-bold">
+                <h3 class="text-tercero font-texto text-md md:font-bold lg:text-lg lg:font-bold" data-aos="fade-up">
                     FLORISTERÍA <span class="font-titulo text-primero text-xl">·</span> AV. DE BRUSELAS
                 </h3>
-                <h1 class="text-quinto font-titulo2 text-[5.6rem] leading-[2.3rem] md:text-[7.5rem] md:leading-[3.5rem] lg:text-[9.5rem] lg:leading-[4.5rem]">
+                <h1 class="text-quinto font-titulo2 text-[5.6rem] leading-[2.3rem] md:text-[7.5rem] md:leading-[3.5rem] lg:text-[9.5rem] lg:leading-[4.5rem]" data-aos="fade-up">
                     <span class="font-bold"> Essenthia </span><br>
                     <span class="text-primero font-titulo text-[2.7rem] font-300 md:text-[3.7rem] lg:text-[4.7rem]">Flores con alma</span>
                 </h1>
-                <p class="text-center font-texto text-[0.95rem] text-tercero">
+                <p class="text-center font-texto text-[0.95rem] text-tercero" data-aos="fade-up">
                     flores_essenthia@gmail.com
                     <br>
                     639 71 61 22
