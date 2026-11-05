@@ -1,6 +1,3 @@
-/* =========================================================
-   Essenthia · CSS propio
-   ========================================================= */
 
 /* Mismo orden de capas que Tailwind (siempre en la primera línea) */
 @layer theme, base, components, utilities;
@@ -10,7 +7,7 @@
 @layer base {
     html {
         scroll-behavior: smooth;
-        scroll-padding-top: 5rem; /* para que la cabecera fija no tape los títulos */
+        scroll-padding-top: 5rem;
     }
 
     /* ===== INDICADORES DE SECCIONES ===== */
@@ -33,31 +30,4 @@
         background-color: #753F40;
         transform: scale(1.1);
     }
-
-    /* ::selection {
-        background: var(--color-acento);
-        color: var(--color-fondo);
-    } */
-
-    /* MODO OSCURO CAMBIANDO EL TEMA ENTERO
-       Cuando el <html> tiene la clase .dark, redefinimos las variables del @theme.
-       Todas las clases que las usan (bg-fondo, text-texto, border-borde...)
-       cambian solas, sin escribir dark: en cada elemento del HTML. */
-    .dark {
-        --color-primero: #E3E1D5;
-        --color-segundo: #2D3B31;
-        --color-tercero: #E3E1D5;
-        --color-cuarto: #404B41;
-        --color-quinto: #E3E1D5;
-        --color-sexto: #89947B;
-        --color-septimo: #A69D9B;
-        color-scheme: dark;
-    }
 }
-
-/* ---------- COMPONENTS: nuestras clases ---------- */
-@layer components {
-
-
-    
-} 
