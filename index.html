@@ -49,56 +49,87 @@
 lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
 
     <header class="fixed top-0 left-0 w-full z-50">
-        <div class="mx-auto flex flex-wrap items-center justify-between px-5 py-5 md:py-8 md:px-8 md:gap-7">
-            <a href="#inicio" class="rounded-full border-2 border-primero px-3 py-1 font-titulo2 text-md text-quinto font-bold md:text-2xl">
+        <div class="mx-auto flex flex-wrap items-center justify-between px-5 py-5 md:py-8 md:px-8 md:gap-7 lg:bg-blur lg:backdrop-blur-sm lg:backdrop-saturate-100">
+            <a href="#inicio" class="rounded-full border-2 border-primero px-3 py-1 bg-blur backdrop-blur-sm backdrop-saturate-100 font-titulo2 text-md text-quinto font-bold md:text-2xl lg:bg-transparent lg:border-3">
                 Essenthia
             </a>
 
-            <div class="flex items-center gap-2 md:order-last">
+            <div class="flex items-center gap-2 lg:order-last">
                 <!-- Botón modo claro y oscuro -->
                 <button id="boton-tema" type="button" aria-pressed="false"
-                        class="rounded-full border-2 border-primero px-[0.65rem] py-1 text-md md:px-[0.7rem] md:text-2xl hover:border-acento hover:text-acento">
+                        class="rounded-full border-2 border-primero px-[0.65rem] py-1 text-md bg-blur backdrop-blur-sm backdrop-saturate-100 md:px-[0.7rem] md:text-2xl lg:bg-transparent lg:border-3 hover:border-acento hover:text-acento">
                     <i class="fa-solid fa-moon text-primero"></i>
                     <!-- <i class="fa-solid fa-sun hidden text-primero"></i> -->
                 </button>
 
                 <!-- Botón abre y cierra del menú en móvil -->
                 <button id="boton-menu" type="button" aria-expanded="false" aria-controls="menu"
-                        class="rounded-full border-2 border-primero px-[0.6rem] py-1 text-md md:px-[0.7rem] md:text-2xl hover:border-acento hover:text-acento md:hidden">
+                        class="rounded-full border-2 border-primero px-[0.6rem] py-1 text-md bg-blur backdrop-blur-sm backdrop-saturate-100 md:px-[0.7rem] md:text-2xl lg:hidden hover:border-acento hover:text-acento">
                     <i class="fa-solid fa-bars text-primero"></i>
                 </button>
             </div>
 
-            <nav class="hidden w-full mt-7 md:ml-auto md:w-auto md:mt-0" aria-label="Principal">
-                <ul id="menu" class="hidden justify-center text-center bg-cuarto rounded-2xl border-2 border-primero font-titulo text-xl text-quinto space-y-1 p-[16px]  md:flex md:gap-8 md:space-y-0 md:pb-0 md:bg-transparent md:border-0 md:font-titulo md:font-bold md:text-3xl md:text-quinto md:p-0">
+            <nav id="nav-principal" class="w-full mt-7 lg:ml-auto lg:w-auto lg:mt-0 max-h-0 opacity-0 overflow-hidden transition-[max-height,opacity] duration-300 ease-in-out lg:max-h-none lg:opacity-100 lg:overflow-visible">
+                <ul id="menu" class="flex flex-col justify-center text-center bg-cuarto rounded-2xl border-2 border-primero font-titulo text-xl text-quinto space-y-1 p-[16px] md:text-2xl lg:flex lg:flex-row lg:gap-8 lg:space-y-0 lg:pb-0 lg:bg-transparent lg:border-0 lg:font-titulo lg:font-bold lg:text-3xl lg:text-quinto lg:p-0">
                     <li><a href="#inicio" class="enlace-menu block py-2">Inicio</a></li>
-                    <li><a href="#productos" class="enlace-menu block py-2">Sobre Nosotros</a></li>
-                    <li><a href="#preguntas" class="enlace-menu block py-2">Ofertas</a></li>
-                    <li><a href="#visitanos" class="enlace-menu block py-2">Galería</a></li>
-                    <li><a href="#visitanos" class="enlace-menu block py-2">Contáctanos</a></li>
-                    <li><a href="#visitanos" class="enlace-menu block py-2">Visítanos</a></li>
+                    <li><a href="#about" class="enlace-menu block py-2">Sobre Nosotros</a></li>
+                    <li><a href="#ofertas" class="enlace-menu block py-2">Ofertas</a></li>
+                    <li><a href="#galeria" class="enlace-menu block py-2">Galería</a></li>
+                    <li><a href="#contacto" class="enlace-menu block py-2">Contáctanos</a></li>
+                    <li><a href="#visita" class="enlace-menu block py-2">Visítanos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <section class="relative isolate min-h-screen bg-segundo px-5 py-5 antialiased before:content-[''] before:absolute before:inset-0 before:-z-10 before:bg-[url('media/img/flores.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-[30%] before:pointer-events-none">
-        <div class="min-h-[calc(100dvh-40px)] flex flex-col justify-center items-center gap-15">
-            <h1 class="text-quinto font-titulo2 text-[5.6rem] leading-[2.3rem] ">
-                <span class="font-bold"> Essenthia </span><br>
-                <span class="text-primero font-titulo text-[2.7rem] font-300">Flores con alma</span>
-            </h1>
-            <h3 class="text-tercero font-texto font-md">
-                FLORISTERÍA <span class="font-titulo text-lg">·</span> AV. DE BRUSELAS
-            </h3>
-        </div>
-    </section>
-    <section class="">
-    </section>
-               
+    <main>
+        <section id="inicio" class="relative isolate min-h-screen bg-segundo px-5 py-5 antialiased before:content-[''] before:absolute before:inset-0 before:-z-10 before:bg-[url('media/img/flores.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-[30%] before:pointer-events-none">
+            <div class="min-h-[calc(100dvh-40px)] flex flex-col justify-center items-center gap-15 lg:gap-10">
+                <h1 class="text-quinto font-titulo2 text-[5.6rem] leading-[2.3rem] md:text-[7.5rem] md:leading-[3.5rem] lg:text-[9.5rem] lg:leading-[4.5rem]">
+                    <span class="font-bold"> Essenthia </span><br>
+                    <span class="text-primero font-titulo text-[2.7rem] font-300 md:text-[3.7rem] lg:text-[4.7rem]">Flores con alma</span>
+                </h1>
+                <h3 class="text-tercero font-texto text-md md:font-bold lg:text-lg lg:font-bold">
+                    FLORISTERÍA <span class="font-titulo text-primero text-xl">·</span> AV. DE BRUSELAS
+                </h3>
+            </div>
+        </section>
+        
+        <section id="about" class="relative isolate overflow-x-clip">
+            <div class="relative z-10 flex justify-center px-9 pt-20 pb-10 md:pt-30 md:pb-20 lg:pt-40">
+                <h2 class="text-primero font-titulo text-[3rem] font-light text-center lg:text-[4rem]">
+                    Sobre Nosotros
+                </h2>
+            </div>
+            <div class="relative bg-sexto py-10 md:py-16">
+                <img src="media/img/decoraciones/blob.png"
+                    alt="Decoración 1" aria-hidden="true" class="absolute pointer-events-none w-70 opacity-50 -right-30 -top-12 md:w-140 md:-right-60 lg:w-200 lg:-right-80 lg:-top-24">
+                <img src="media/img/decoraciones/blob.png"
+                    alt="Decoración 2" aria-hidden="true" class="absolute pointer-events-none w-74 md:w-140 -left-30 -bottom-15 opacity-50 md:-left-60 lg:w-200 lg:-left-80 lg:-bottom-30">
+                <div class="relative z-0 flex items-center gap-4 mb-12 md:gap-10 md:-mb-8 lg:gap-20 lg:-mb-25">
+                    <figure class="relative shrink-0 w-55 h-55 -ml-15 rounded-full border-2 border-primero overflow-hidden md:w-120 md:h-120 md:-ml-32 lg:w-180 lg:h-180 lg:-ml-40 lg:border-3">
+                        <img src="media/img/about/about-1.webp" alt="Composición floral de Essenthia" class="w-full h-full object-cover">
+                    </figure>
+                    <p class="flex-1 min-w-0 pr-6 font-texto text-cuarto text-[0.65rem] font-light md:text-base md:pr-8 lg:text-2xl lg:pr-10" >
+                        Essenthia nace de nuestra pasión por las flores y de una forma diferente de entender su belleza. Creemos que cada flor tiene algo especial que ofrecer, una personalidad propia y una capacidad única para transmitir emociones, despertar recuerdos y transformar pequeños momentos en experiencias extraordinarias. Nos inspira la diversidad de la naturaleza, sus colores, formas, texturas y contrastes. Por eso, entendemos cada composición como una oportunidad para experimentar, crear y explorar nuevas posibilidades.
+                    </p>
+                </div>
+                <div class="relative z-0 flex items-center gap-4 md:gap-10 lg:gap-20">
+                    <p class="flex-1 min-w-0 pl-6 font-texto text-cuarto text-[0.65rem] font-light md:text-base md:pl-8 lg:text-2xl lg:pl-10">
+                        Para nosotros, las flores no necesitan una ocasión especial para formar parte de nuestras vidas, pero queremos acompañarte en esos momentos, tanto en las grandes celebraciones como en los pequeños gestos cotidianos, ofreciendo composiciones que cuenten historias. En Essenthia apostamos por una floristería que va más allá de lo convencional, donde la sensibilidad y la creatividad se encuentran para dar vida a algo único. Cada ramo, cada combinación y cada pequeño detalle forman parte de una manera personal de entender las flores.
+                    </p>
+                    <figure class="relative shrink-0 w-48 h-48 -mr-15 rounded-full border-2 border-primero overflow-hidden md:w-110 md:h-110 md:-mr-32 lg:w-160 lg:h-160 lg:-mr-40 lg:border-3">
+                        <img
+                            src="media/img/about/about-2.webp"
+                            alt="Composición floral de Essenthia"
+                            class="w-full h-full object-cover"
+                        >
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section id="ofertas" class="">              
                    
     <!-- GALERIA -->
-
     <section id="galeria">
         <h1 class="text-center font-titulo text-[3rem] text-primero py-8">Galería</h1>
         <div class="bg-septimo px-6 py-8">
@@ -153,10 +184,10 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
                 </figure>
             </div>
         </div>
+    </section>
+      <!-- CONTACTO -->
 
-    <!-- CONTACTO -->
-
-    <section id="form">
+    <section id="contacto">
         <h1 class="text-center font-titulo text-[3rem] text-primero py-8">Contáctanos</h1>
         <div class="bg-sexto px-6 py-8">
             <p class="text-center font-texto text-[0.95rem] text-cuarto">Para encargarnos un ramo personalizado, ¡contáctanos!</p>
@@ -171,7 +202,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
 
     <!-- UBICACIÓN Y HORARIOS -->
 
-    <section id="ubi">
+    <section id="visita">
         <h1 class="text-center font-titulo text-[3rem] text-primero py-8">Visítanos</h1>
         <div class="bg-cuarto px-6 py-8">
             <p class="text-center font-texto text-[0.95rem] text-tercero">Puedes encontrarnos en</p>
@@ -185,8 +216,27 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none">
         </div>
     </section>
 
+    </main>
+        <!-- Indicadores de secciones -->
+    <!-- Indicadores de secciones -->
+    <nav id="indicadores-secciones" aria-label="Navegación por secciones"
+        class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center justify-center gap-3">
+        <a href="#inicio" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Inicio" aria-current="location">
+        </a>
+        <a href="#about" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Sobre Nosotros">
+        </a>
+        <a href="#ofertas" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Ofertas">
+        </a>
+        <a href="#galeria" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Galería">
+        </a>
+        <a href="#contacto" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Contáctanos">
+        </a>
+        <a href="#visita" class="w-3 h-3 rounded-full border-[1.5px] border-primero bg-transparent transition-colors duration-300 aria-[current=location]:bg-primero" aria-label="Ir a Visítanos">
+        </a>
+    </nav>
+    <footer>
 
- 
+    </footer> 
     <!-- =====JAVASCRIPT ===== -->
      <script src="js/jquery-3.6.1.min.js"></script>
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
