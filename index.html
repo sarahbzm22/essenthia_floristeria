@@ -62,8 +62,8 @@
 lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:opacity-[10%]">
 
     <header class="fixed top-0 left-0 w-full z-50">
-        <div class="mx-auto flex flex-wrap items-center justify-between p-5 md:py-8 md:px-8 md:gap-7 lg:p-5 lg:bg-blur lg:backdrop-blur-sm lg:backdrop-saturate-100">
-            <a href="#inicio" class="rounded-full border-2 border-primero px-3 py-1 bg-blur backdrop-blur-sm backdrop-saturate-100 font-titulo2 text-md text-quinto font-bold hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-2xl lg:bg-transparent lg:border-3">
+        <div class="mx-auto flex flex-wrap items-center justify-between p-5 md:py-8 md:px-8 md:gap-7 lg:p-5 lg:bg-cuarto/70">
+            <a href="#inicio" class="rounded-full border-2 border-primero px-3 py-1 bg-cuarto font-titulo2 text-md text-quinto font-bold hover:bg-primero hover:text-cuarto transition-colors duration-300 md:text-2xl lg:bg-transparent lg:border-3">
                 Essenthia
             </a>
 
@@ -72,7 +72,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                 <button id="boton-tema" type="button"
                     aria-pressed="false"
                     aria-label="Activar modo oscuro"
-                    class="rounded-full border-2 border-primero px-[0.65rem] py-1 text-md text-primero bg-transparent backdrop-blur-sm hover:bg-primero hover:text-cuarto transition-colors duration-300 md:px-[0.7rem] md:text-2xl lg:bg-transparent lg:border-3">
+                    class="rounded-full border-2 border-primero px-[0.65rem] py-1 text-md text-primero bg-cuarto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:px-[0.7rem] md:text-2xl lg:bg-transparent lg:border-3">
 
                     <i id="icono-luna" class="fa-solid fa-moon"></i>
                     <i id="icono-sol" class="fa-solid fa-sun" style="display: none;"></i>
@@ -81,7 +81,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
 
                 <!-- Botón abre y cierra del menú en móvil -->
                 <button id="boton-menu" type="button" aria-expanded="false" aria-controls="menu"
-                        class="rounded-full border-2 border-primero px-[0.6rem] py-1 text-md text-primero bg-blur backdrop-blur-sm backdrop-saturate-100 hover:bg-primero hover:text-cuarto transition-colors duration-300 md:px-[0.7rem] md:text-2xl lg:hidden">
+                        class="rounded-full border-2 border-primero px-[0.6rem] py-1 text-md text-primero bg-cuarto hover:bg-primero hover:text-cuarto transition-colors duration-300 md:px-[0.7rem] md:text-2xl lg:hidden">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -126,12 +126,12 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                         <img src="media/img/about/about-1.webp" alt="Composición floral de Essenthia" class="w-full h-full object-cover">
                     </figure>
                     <p class="flex-1 min-w-0 pr-6 font-texto text-cuarto text-[0.65rem] font-light md:text-base md:pr-8 lg:text-2xl lg:pr-10" >
-                        Essenthia nace de nuestra pasión por las flores y de una forma diferente de entender su belleza. Creemos que cada flor tiene algo especial que ofrecer, una personalidad propia y una capacidad única para transmitir emociones, despertar recuerdos y transformar pequeños momentos en experiencias extraordinarias. Nos inspira la diversidad de la naturaleza, sus colores, formas, texturas y contrastes. Por eso, entendemos cada composición como una oportunidad para experimentar, crear y explorar nuevas posibilidades.
+                        Essenthia nace de nuestra pasión por las flores y de una forma diferente de entender su belleza. Creemos que cada flor tiene algo especial que ofrecer, una personalidad propia y una capacidad única para transmitir emociones, despertar recuerdos y transformar pequeños momentos en experiencias extraordinarias.
                     </p>
                 </div>
                 <div class="relative z-0 flex items-center gap-4 md:gap-10 lg:gap-20">
                     <p class="flex-1 min-w-0 pl-6 font-texto text-cuarto text-[0.65rem] font-light md:text-base md:pl-8 lg:text-2xl lg:pl-10">
-                        Para nosotros, las flores no necesitan una ocasión especial para formar parte de nuestras vidas, pero queremos acompañarte en esos momentos, tanto en las grandes celebraciones como en los pequeños gestos cotidianos, ofreciendo composiciones que cuenten historias. En Essenthia apostamos por una floristería que va más allá de lo convencional, donde la sensibilidad y la creatividad se encuentran para dar vida a algo único. Cada ramo, cada combinación y cada pequeño detalle forman parte de una manera personal de entender las flores.
+                        Para nosotros, las flores no necesitan una ocasión especial para formar parte de nuestras vidas, pero queremos acompañarte en esos momentos, tanto en las grandes celebraciones como en los pequeños gestos cotidianos, ofreciendo composiciones que cuenten historias. 
                     </p>
                     <figure class="relative shrink-0 w-48 h-48 -mr-15 rounded-full border-2 border-primero overflow-hidden md:w-110 md:h-110 md:-mr-32 lg:w-160 lg:h-160 lg:-mr-40 lg:border-3" data-aos="zoom-in">
                         <img
@@ -155,7 +155,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                 <img src="media/img/decoraciones/flor.png" alt="" aria-hidden="true" class="absolute pointer-events-none w-74 -left-40 -bottom-55 opacity-25 rotate-40 md:w-120 md:-left-70 md:-bottom-85 lg:w-180 lg:-left-120 lg:-bottom-120 dark:opacity-50">
                 <div class="relative z-10 overflow-x-auto overscroll-x-contain scroll-smooth  lg:overflow-x-visible">
                     <div class="flex w-max flex-nowrap items-stretch gap-2 md:gap-10 md:px-6 lg:grid lg:w-full lg:grid-cols-5 lg:gap-6 lg:px-8">
-                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                        <article class="flex w-45 shrink-0 snap-start flex-col gap-4 bg-cuarto/70 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
                             <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
                                 <img src="media/img/ofertas/ofertas-1.webp"
                                     alt="Composición floral Sunny Day de Essenthia"
@@ -172,7 +172,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                                 ENCARGAR RAMO
                             </button>
                         </article>
-                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                        <article class="flex w-45 shrink-0 snap-start flex-col gap-4 bg-cuarto/70 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
                             <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
                                 <img src="media/img/ofertas/ofertas-2.webp"
                                     alt="Composición floral Rosé Cloud de Essenthia"
@@ -189,7 +189,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                                 ENCARGAR RAMO
                             </button>
                         </article>
-                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                        <article class="flex w-45 shrink-0 snap-start flex-col gap-4 bg-cuarto/70 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
                             <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
                                 <img src="media/img/ofertas/ofertas-3.webp"
                                     alt="Composición floral Peachy de Essenthia"
@@ -206,7 +206,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                                 ENCARGAR RAMO
                             </button>
                         </article>
-                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                        <article class="flex w-45 shrink-0 snap-start flex-col gap-4 bg-cuarto/70 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
                             <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
                                 <img src="media/img/ofertas/ofertas-4.webp"
                                     alt="Composición floral Golden Hour de Essenthia"
@@ -223,7 +223,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                                 ENCARGAR RAMO
                             </button>
                         </article>
-                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                        <article class="flex w-45 shrink-0 snap-start flex-col gap-4 bg-cuarto/70 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
                             <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
                                 <img src="media/img/ofertas/ofertas-5.webp"
                                     alt="Composición floral Rouge de Essenthia"
@@ -240,7 +240,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                                 ENCARGAR RAMO
                             </button>
                         </article>
-                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                        <article class="flex w-45 shrink-0 snap-start flex-col gap-4 bg-cuarto/70 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
                             <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
                                 <img src="media/img/ofertas/ofertas-6.webp"
                                     alt="Composición floral Honey Glow de Essenthia"
@@ -257,7 +257,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                                 ENCARGAR RAMO
                             </button>
                         </article>
-                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                        <article class="flex w-45 shrink-0 snap-start flex-col gap-4 bg-cuarto/70 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
                             <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
                                 <img src="media/img/ofertas/ofertas-7.webp"
                                     alt="Composición floral Tangerine de Essenthia"
@@ -274,7 +274,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                                 ENCARGAR RAMO
                             </button>
                         </article>
-                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                        <article class="flex w-45 shrink-0 snap-start flex-col gap-4 bg-cuarto/70 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
                             <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
                                 <img src="media/img/ofertas/ofertas-8.webp"
                                     alt="Composición floral Burgundy de Essenthia"
@@ -291,7 +291,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                                 ENCARGAR RAMO
                             </button>
                         </article>
-                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                        <article class="flex w-45 shrink-0 snap-start flex-col gap-4 bg-cuarto/70 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
                             <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
                                 <img src="media/img/ofertas/ofertas-9.webp"
                                     alt="Composición floral Tulip Kiss de Essenthia"
@@ -308,7 +308,7 @@ lg:before:bg-cover before:opacity-[50%] before:pointer-events-none dark:before:o
                                 ENCARGAR RAMO
                             </button>
                         </article>
-                        <article class="flex w-45 h-[32rem] shrink-0 snap-start flex-col gap-4 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
+                        <article class="flex w-45 shrink-0 snap-start flex-col gap-4 bg-cuarto/70 rounded-2xl border-2 border-tercero p-3 font-texto text-cuarto md:w-64 lg:w-full">
                             <figure class="w-full h-50 flex-none overflow-hidden rounded-xl">
                                 <img src="media/img/ofertas/ofertas-10.webp"
                                     alt="Composición floral Blush Garden de Essenthia"
